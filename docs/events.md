@@ -60,7 +60,7 @@ interface GameRoom {
   id: string;
   hostId: string;
   players: Player[];
-  // ... see docs/architecture.md
+  // ... 
 }
 ```
 
@@ -102,7 +102,6 @@ interface Player {
 
 - Always send only the minimal required payload for each event.
 - Document changes and new event types in this file.
-- Link related events from [docs/flows.md](flows.md) for more context.
 
 ---
 
