@@ -1,9 +1,10 @@
-// models/Player.ts
-import { Schema, model } from 'mongoose';
-
-const PlayerSchema = new Schema({
-  name: String,
-});
-
-export default model('Player', PlayerSchema);
-
+export interface Player {
+  id: string;
+  name: string;
+  isHost?: boolean;
+  teamId?: string;
+  score?: number;
+  isOnline?: boolean;
+  lastActive?: Date;
+  color?: string;
+}
